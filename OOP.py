@@ -13,11 +13,12 @@ class Student:
     def __init__(self, name, marks):
         self.name= name
         self.marks= marks
-    def hello(self):
-        print("Hello,",self.name)
-    def marks(self):
-        return "Marks of", self.name
+    @staticmethod
+    def hello():
+        print("Hello!")
+    def get_marks(self):
+        return "Marks of", self.name,"->", self.marks
 
 s1= Student("Anbu", 88)
 s1.hello()
-print(s1.marks())
+print(s1.get_marks())
