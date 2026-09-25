@@ -16,22 +16,20 @@ class Account:
     def __init__(self, accNum, balance):
         self.accNum= accNum
         self.balance= balance
-    def debit(self):
-        debit_amount=int(input("Enter the amount to be debited:"))
-        if self.balance>=debit_amount:
-            self.balance-= debit_amount
+    def debit(self, amount):
+        if self.balance>=amount:
+            self.balance-=amount
             print("Amount debited successfully. New balance is:",self.balance)
         else:
             print("Insufficient balance, your balance is ", self.balance)
-    def credit(self):
-        credit_amount=int(input("Enter amount to be credited"))
-        self.balance+=credit_amount
+    def credit(self, amount):
+        self.balance+=amount
         print("Amount credited successfully. New balance is:",self.balance)
     def check_balance(self):
         print("Your current balance is:",self.balance)
 a1=Account(1234567890,5000)
 a1.accNum
 a1.balance
-a1.credit()
-a1.debit()
+a1.credit(5000)
+a1.debit(8000)
 a1.check_balance()
