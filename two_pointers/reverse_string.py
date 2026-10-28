@@ -3,7 +3,7 @@
 
 
 class Solution:
-    def reverse(self, s):
+    def rev(self, s):
         if len(s)<=1:
             return s
         left = 0
@@ -20,4 +20,4 @@ class Solution:
 str=["H","a","n","n","a","h"]
 #instance variable
 solver = Solution()
-print(solver.reverse(str))
+print(solver.rev(str))
