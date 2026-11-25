@@ -37,10 +37,6 @@ class Solution:
             right-=1
         return True
 
-
-
-       
-
 solver=Solution()
 s="abbab"
 print(solver.validPalindrome(s))
