@@ -8,9 +8,7 @@ class Solution:
     def threeSum(self, nums):
         left =0
         right = left +1
-
-
-
+        
 
 arr = [-1,0,1,2,-1,-4]
 sol = Solution()
